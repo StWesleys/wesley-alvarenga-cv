@@ -1,0 +1,9 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "wesley-alvarenga-cv",
+  "compatibility_date": "2026-10-13",
+  // Site 100% estático: sem script, a Cloudflare serve a pasta dist/
+  "assets": {
+    "directory": "./dist"
+  }
+}

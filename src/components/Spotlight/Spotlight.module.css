@@ -1,0 +1,27 @@
+.spot {
+  --x: -999px;
+  --y: -999px;
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(oklch(0.87 0.18 128 / 0.35) 1px, transparent 1px),
+    linear-gradient(90deg, oklch(0.87 0.18 128 / 0.35) 1px, transparent 1px);
+  background-size: 48px 48px;
+  -webkit-mask-image: radial-gradient(220px circle at var(--x) var(--y), #000, transparent 70%);
+  mask-image: radial-gradient(220px circle at var(--x) var(--y), #000, transparent 70%);
+}
+
+.glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(420px circle at var(--x) var(--y), oklch(0.87 0.18 128 / 0.07), transparent 70%);
+}

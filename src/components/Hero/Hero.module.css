@@ -1,0 +1,103 @@
+.hero {
+  padding: clamp(48px, 10vw, 88px) 0 clamp(48px, 8vw, 72px);
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.hello {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.name {
+  margin: 0;
+  font-size: clamp(52px, 10vw, 128px);
+  line-height: 0.92;
+  letter-spacing: -0.045em;
+  font-weight: 600;
+}
+
+.typing {
+  font-family: var(--font-mono);
+  font-size: clamp(15px, 2.2vw, 22px);
+  line-height: 1.4;
+  color: var(--accent);
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  min-height: 32px;
+}
+
+.prompt {
+  color: #555;
+}
+
+.cursor {
+  display: inline-block;
+  width: 10px;
+  height: 22px;
+  background: var(--accent);
+  animation: global(blink) 1s steps(1) infinite;
+}
+
+.about {
+  margin: 0;
+  max-width: 640px;
+  font-size: clamp(16px, 2vw, 18px);
+  line-height: 1.7;
+  color: var(--body);
+  text-wrap: pretty;
+}
+
+.contacts {
+  font-family: var(--font-mono);
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-size: 13px;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  gap: 10px;
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+  font: inherit;
+  padding: 11px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.contact:hover {
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.contact:focus-visible {
+  outline: 1px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.icon {
+  flex: none;
+  color: var(--accent);
+}
+
+@media (max-width: 719.98px) {
+  .typing {
+    min-height: 2.8em;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cursor {
+    animation: none;
+  }
+}

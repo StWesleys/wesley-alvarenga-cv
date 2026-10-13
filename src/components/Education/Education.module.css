@@ -1,0 +1,65 @@
+.section {
+  padding: 24px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+  gap: clamp(32px, 5vw, 48px);
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.edu {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.course {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.school {
+  color: #a8a8a8;
+}
+
+.eduMeta {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 6px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.years {
+  color: var(--accent);
+}
+
+.langs {
+  display: flex;
+  flex-direction: column;
+}
+
+.lang {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid #141414;
+}
+
+.langName {
+  font-size: 17px;
+}
+
+.level {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--muted);
+}

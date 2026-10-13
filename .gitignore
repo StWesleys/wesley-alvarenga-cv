@@ -1,0 +1,8 @@
+node_modules
+dist
+.wrangler
+*.local
+
+# material de trabalho (não faz parte do site)
+prompt-claude-code*.md
+wesley-alvarenga-cv.html

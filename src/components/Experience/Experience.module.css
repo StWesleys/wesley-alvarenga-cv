@@ -1,0 +1,153 @@
+.section {
+  padding: 24px 0 clamp(48px, 8vw, 72px);
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 40px;
+  padding: clamp(20px, 5vw, 32px);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--card);
+  box-shadow: 0 20px 60px -30px rgba(170, 230, 90, 0.25);
+  transition: opacity 0.25s, border-color 0.25s;
+}
+
+.hit {
+  border-color: var(--accent);
+}
+
+.dim {
+  opacity: 0.35;
+}
+
+.meta {
+  font-family: var(--font-mono);
+  flex: 1 1 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.period {
+  align-self: flex-start;
+  color: #000;
+  background: var(--accent);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+
+.place {
+  color: var(--body);
+  font-size: 13px;
+}
+
+.phases {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.phase {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: #a8a8a8;
+}
+
+.badge {
+  border: 1px solid #333;
+  color: var(--text);
+  padding: 2px 7px;
+  border-radius: 4px;
+  min-width: 38px;
+  text-align: center;
+}
+
+.main {
+  flex: 3 1 440px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.company {
+  margin: 0;
+  font-size: clamp(24px, 6vw, 32px);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #fff;
+  overflow-wrap: anywhere;
+}
+
+.role {
+  color: var(--accent);
+  margin-top: 6px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.summary {
+  margin: 0;
+  color: #e6e6e6;
+  line-height: 1.7;
+  font-size: 16.5px;
+  text-wrap: pretty;
+}
+
+.toggle {
+  align-self: flex-start;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  color: #cfcfcf;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.toggle:hover {
+  color: var(--accent);
+}
+
+.toggle:focus-visible {
+  outline: 1px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.bullets {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bullet {
+  display: flex;
+  gap: 12px;
+  color: #dedede;
+  line-height: 1.6;
+  font-size: 15.5px;
+}
+
+.arrow {
+  color: var(--accent);
+  font-family: 'Geist Mono', monospace;
+}
+
+.chips {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  padding-top: 4px;
+}
