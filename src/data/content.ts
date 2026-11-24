@@ -60,23 +60,4 @@ export const C: Record<Lang, Content> = {
     edu: { course: 'Bachelor of Information Systems', place: 'Belo Horizonte, MG' },
     langs: [{ name: 'Portuguese', level: 'Native' }, { name: 'English', level: 'Advanced' }, { name: 'Japanese', level: 'JLPT N5' }],
   },
-  ja: {
-    title: 'フルスタック経験のあるフロントエンド開発者',
-    baseLabel: '所在地', open: { label: '希望条件', items: ['リモート', 'ハイブリッド', '出社', '正社員（CLT）', '業務委託（PJ）', '海外の求人'] },
-    about: 'MVCアーキテクチャとオブジェクト指向開発を専門とし、Webアプリケーション開発の経験を持つミドルレベルのフロントエンド開発者。最新技術とアジャイル手法を活用する、挑戦的なプロジェクトへの貢献を目指しています。',
-    location: 'ブラジル・ミナスジェライス州',
-    exps: {
-      tab: { role: 'フロントエンド開発者', place: 'ブラジル・ミナスジェライス州',
-        summary: '2022年から、オムニチャネルプラットフォーム「TabControl」のフロントエンド全体を担当。IVR、AIチャットボット、リアルタイム監視を備え、官民の大規模なオペレーションで利用されています。',
-        bullets: ['Angular、TypeScript、HTML、SCSSを使用した新機能のゼロからの開発', 'アプリケーションのレイアウトを全面的に再構築し、ユーザビリティとUXを向上', 'Pythonで開発されたREST APIと連携し、データの取得・操作を実装', '再利用可能なコンポーネントの作成とフロントエンドアーキテクチャの整備', '自律的な問題解決とシステムの継続的な改善', 'アプリケーションのパフォーマンス改善と保守に参加', '開発フローにAIツールを活用し、開発スピードを向上'] },
-      bear: { role: 'フルスタック開発者・ボランティア', place: 'ブラジル',
-        summary: 'Bear Systemのボランティアのフルスタック開発者として、React、Node.js、Next.js、Firebaseを使い、LikeDeliveryアプリのフロントエンドレイアウトの開発を立ち上げました。', bullets: [] },
-      prodemge: { role: '企画アナリスト（インターン）', place: 'ブラジル・ベロオリゾンテ',
-        summary: 'ミナスジェライス州情報技術公社の技術イノベーション部門でインターンとして、ブロックチェーン、デジタルトランスフォーメーション、データサイエンスなどのプロジェクトに参加しました。',
-        bullets: ['顧客の課題やニーズに対するアイデアを得るため、デザイン思考を用いたアイデア創出セッションの準備・実施・記録', 'Lean Inception手法による製品定義セッションを支援し、ソリューションとシステムをMVPとして優先順位付け', 'アイデア創出のファシリテーションとPM Canvasを活用したプロジェクト企画', '他部署へのデザイン思考の知識共有', '部門のプロセス文書・成果物・フローの更新（PowerPoint、Word、Excel、Data Studio）', 'バーチャルイノベーションルームの運営：ルーム更新、イベント対応、リソース管理'] },
-    },
-    groups: { lang: 'プログラミング言語', front: 'フロントエンド', back: 'バックエンド', ai: '人工知能', tools: 'ツール', style: 'スタイリング', agile: 'アジャイル手法' },
-    edu: { course: '情報システム学 学士', place: 'ブラジル・ベロオリゾンテ' },
-    langs: [{ name: 'ポルトガル語', level: 'ネイティブ' }, { name: '英語', level: '上級' }, { name: '日本語', level: 'JLPT N5' }],
-  },
 };

@@ -19,8 +19,8 @@
   --err: #e07a6a;
   --num: #e8a87c;
 
-  --font-sans: 'Geist', 'Noto Sans JP', system-ui, sans-serif;
-  --font-mono: 'Geist Mono', 'Noto Sans JP', monospace;
+  --font-sans: 'Geist', system-ui, sans-serif;
+  --font-mono: 'Geist Mono', monospace;
 }
 
 html,

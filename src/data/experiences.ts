@@ -17,6 +17,6 @@ export const EXPS: Experience[] = [
   { id: 'prodemge', company: 'PRODEMGE', start: '2020', end: '2022', phases: [], techs: ['Design Thinking', 'Lean Inception', 'PM Canvas', 'Data Studio', 'Blockchain', 'Data Science'] },
 ];
 
-export const NOW: Record<Lang, string> = { pt: 'atual', en: 'Present', ja: '現在' };
+export const NOW: Record<Lang, string> = { pt: 'atual', en: 'Present' };
 
 export const per = (lang: Lang, s: string, e: string | null) => `${s} — ${e ?? NOW[lang]}`;

@@ -1,4 +1,4 @@
-export type Lang = 'pt' | 'en' | 'ja';
+export type Lang = 'pt' | 'en';
 
 export type CmdKey = 'whoami' | 'about' | 'experience' | 'projects' | 'skills' | 'education' | 'languages' | 'contact' | 'json' | 'clear';
 
@@ -35,7 +35,7 @@ export interface UiText {
   hire: string;
 }
 
-export const LANGS: [Lang, string, string][] = [['pt', 'PT', 'Português'], ['en', 'EN', 'English'], ['ja', 'JP', '日本語']];
+export const LANGS: [Lang, string, string][] = [['pt', 'PT', 'Português'], ['en', 'EN', 'English']];
 
 export const T: Record<Lang, UiText> = {
   pt: {
@@ -71,22 +71,5 @@ export const T: Record<Lang, UiText> = {
     cmd: { about: 'about', projects: 'projects', experience: 'experience', skills: 'skills', education: 'education', languages: 'languages', contact: 'contact' },
     help: { whoami: 'who I am', about: 'professional summary', experience: 'where I worked', projects: 'GitHub projects', skills: 'technologies and methods', education: 'academic background', languages: 'spoken languages', contact: 'email and phone', json: 'view résumé as JSON', clear: 'clear terminal' },
     phone: 'phone', stack: 'stack', hire: '✓ great choice.',
-  },
-  ja: {
-    tabs: ['about.tsx', 'terminal.sh', 'experience.ts', 'projects.ts', 'stack.json', 'education.md'],
-    visual: 'ビジュアル', hello: '// こんにちは、世界 — 私は',
-    roles: ['フロントエンド開発者', 'Angular・Next.js・NestJSでフルスタック', 'ミドルレベルフロントエンド', 'TypeScript & JavaScript'],
-    copied: '✓ メールをコピーしました', placeholder: 'help と入力',
-    welcome: ['ようこそ！この履歴書はコマンドにも応答します。', "'help' と入力するか、下のコマンドをクリックしてください。"],
-    h_exp: '職務経歴', h_proj: 'プロジェクト', toTop: 'トップへ戻る', allRepos: 'GitHubですべて見る ↗', viewCode: 'コードを見る', h_skills: 'スキル', h_edu: '学歴', h_lang: '語学',
-    skillHint: '技術をクリックすると職歴を絞り込めます', filterIdle: '技術をクリックして絞り込み',
-    filterOn: (s, n, t) => `フィルター: ${s} · ${t}件中${n}件 — もう一度クリックで解除`,
-    show: n => `[+] 業務内容を表示 (${n})`, hide: '[−] 業務内容を隠す',
-    copy: 'コピー', copiedJson: '✓ コピー済み',
-    notFound: c => `コマンドが見つかりません: ${c}。'help' を試してください`, opening: 'wesley-alvarenga.json を開いています…',
-    helpTitle: '使用可能なコマンド:',
-    cmd: { about: 'about', projects: 'projects', experience: 'experience', skills: 'skills', education: 'education', languages: 'languages', contact: 'contact' },
-    help: { whoami: '自己紹介', about: '職務要約', experience: '職務経歴', projects: 'GitHubのプロジェクト', skills: '技術と手法', education: '学歴', languages: '語学', contact: 'メールと電話', json: 'JSONで表示', clear: 'ターミナルをクリア' },
-    phone: '電話', stack: '技術', hire: '✓ 素晴らしい選択です。',
   },
 };
